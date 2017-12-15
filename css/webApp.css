@@ -1,0 +1,791 @@
+/*reset*/
+html {
+  font-size: 100px;
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 117.1875px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 129.375px;
+  }
+}
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu,
+img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+th {
+  font-weight: 400;
+}
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+s {
+  text-decoration: none;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei', arial, SimSun, sans-serif, tahoma;
+}
+a {
+  color: #4c4c4c;
+}
+.center {
+  text-align: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft Yahei", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.redword {
+  color: #ff4040;
+}
+.lightgrey {
+  color: #a8a8a8;
+}
+.blueword {
+  color: #008fff;
+}
+.radiusbtn {
+  width: 70%;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.16rem;
+  border-radius: 0.3rem;
+}
+.wrap {
+  width: 100%;
+  position: relative;
+}
+.wrap.mui-content {
+  padding-top: 0.3rem;
+}
+.wrap {
+  background: #F2F2F2;
+}
+.wrap img {
+  width: 100%;
+}
+.fffbg {
+  background: #fff;
+}
+.bluebg {
+  background: #008fff;
+  box-shadow: 0 12px 35px 0 #74bef9;
+}
+.greybg {
+  background: #ddd;
+  box-shadow: none;
+}
+.fs12 {
+  font-size: 0.1rem;
+}
+.backbar {
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0.05rem 0;
+  line-height: 0.18rem;
+}
+.backbar .backicon {
+  width: 33.33%;
+  float: left;
+}
+.backbar .backicon .mui-icon {
+  margin-left: 0.1rem;
+}
+.backbar .backicon .mui-icon.white {
+  color: #fff;
+}
+.backbar .backicon .mui-icon.blue {
+  color: #008fff;
+}
+.backbar .pagetit {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+.backbar .more {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+/*index*/
+.block_home_slider {
+  background: #fff;
+  /*padding: 1px;*/
+  position: relative;
+  /*border: 4px solid #fff;*/
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url(js/PIE.htc);
+  /*半透明兼容*/
+  text-align: center;
+  line-height: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+}
+.flex-viewport {
+  border-bottom: #ddd solid 1px;
+}
+/*底部小图标*/
+.block_home_slider .slide {
+  position: relative;
+}
+.block_home_slider .flex-control-paging {
+  position: absolute;
+  bottom: 75px;
+  width: 100%;
+  text-align: center;
+}
+.block_home_slider .flex-control-paging li {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+}
+.block_home_slider .flex-control-paging li a {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../images/webapp/sprite_nav_2.png);
+  text-indent: -9000px;
+  cursor: pointer;
+}
+.block_home_slider .flex-control-paging li a.flex-active {
+  background-position: right top;
+  display: inline-block;
+}
+.flexslider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.flexslider .slides > li {
+  /*display: none;*/
+  -webkit-backface-visibility: hidden;
+  list-style-type: none;
+}
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.middot {
+  background: #4c4c4c none repeat scroll 0 0;
+  border-radius: 6px;
+  display: inline-block;
+  height: 2px;
+  margin: 0 5px;
+  position: relative;
+  top: -4px;
+  width: 2px;
+}
+.menu {
+  width: 92%;
+  margin: -0.5rem auto 0.14rem;
+  position: relative;
+  z-index: 2;
+}
+.menu ul {
+  background: #fff;
+  padding: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #555;
+}
+.menu ul li {
+  float: left;
+  text-align: center;
+  width: 33.3%;
+}
+.menu ul li a {
+  display: block;
+}
+.menu ul li a img {
+  width: 30%;
+}
+.menu ul li a h2 {
+  margin-top: 20px;
+  font-weight: 400;
+}
+.hotpro {
+  background: url(../images/webapp/hotpr_bg.png) no-repeat;
+  width: 92%;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  padding: 0.3rem 0 0.4rem;
+  overflow: hidden;
+}
+.hotpro h3 {
+  font-size: 0.16rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #595959;
+}
+.hotpro .rate {
+  position: relative;
+  text-align: center;
+  width: 40%;
+  margin-left: 8%;
+  padding-top: 0.4rem;
+  color: #008fff;
+}
+.hotpro .rate img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.hotpro .rate span {
+  font-size: 0.2rem;
+}
+.hotpro .rate p {
+  margin-top: 10px;
+  font-size: 0.1rem;
+}
+.hotpro .prest {
+  width: 42%;
+  padding-left: 8%;
+  padding-top: 15px;
+}
+.hotpro .prest p {
+  line-height: 0.25rem;
+  font-size: 0.1rem;
+}
+.hotpro .prest .big {
+  font-size: 0.16rem;
+}
+.safebox img {
+  width: 100%;
+  display: block;
+}
+.index_prtit {
+  width: 100%;
+  background: #fff;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  margin-top: 0.15rem;
+}
+.index_prlist li {
+  margin: 0 auto 0.1rem;
+  background: #fff;
+}
+.index_prlist li > div {
+  width: 94%;
+  margin: 0 auto;
+}
+.index_prlist li .prname {
+  border-bottom: #eee solid 1px;
+  height: 0.3rem;
+  line-height: 0.25rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.13rem;
+}
+.index_prlist li .prname i {
+  display: inline-block;
+  background: url(../images/webapp/sprit.png);
+  width: 23px;
+  height: 24px;
+  padding-left: 0.03rem;
+}
+.index_prlist li .prname i.lou {
+  background-position: 0 0;
+}
+.index_prlist li .prname i.ding {
+  background-position: -31px 0;
+}
+.index_prlist li .prname i.xin {
+  background-position: -63px 0;
+}
+.index_prlist li .prname i.ling {
+  background-position: -95px 0;
+}
+.index_prlist li .prname i,
+.index_prlist li .prname span {
+  vertical-align: middle;
+}
+.index_prlist li table {
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+.index_prlist li table tr td {
+  color: #b0b0b0;
+  font-size: 0.1rem;
+  line-height: 0.2rem;
+}
+.index_prlist li table tr td.rate {
+  color: #f00;
+  text-align: left;
+  width: 40%;
+}
+.index_prlist li table tr td.rate span {
+  font-size: 0.25rem;
+}
+.index_prlist li table tr td.month {
+  color: #4c4c4c;
+  width: 15%;
+}
+.index_prlist li table tr td.month span {
+  font-size: 0.2rem;
+}
+.index_prlist li table tr td.leftmoney {
+  text-align: right;
+  color: #4c4c4c;
+  width: 45%;
+}
+.index_prlist li table tr td.leftmoney span {
+  font-size: 0.16rem;
+}
+.index_prlist li table tr td .ratechart {
+  width: 83%;
+  background: #f1f1f1;
+  border-radius: 3px;
+  height: 3px;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+}
+.index_prlist li table tr td .ratechart .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #008fff;
+  border-radius: 3px;
+  display: inline-block;
+  height: 3px;
+}
+.index_prlist li table tr td .ratepercent {
+  float: left;
+  width: 17%;
+  color: #008fff;
+  font-size: 0.11rem;
+  text-align: right;
+}
+/******************************************************/
+/*dtlist*/
+.dttop {
+  position: relative;
+  overflow: hidden;
+}
+.dttop .backbar {
+  padding-top: 0.1rem;
+}
+.dttop .bgpic {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+}
+.dttop .topdes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.1rem 0;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  top: 0.06rem;
+}
+.dttop .topdes p {
+  color: #fff;
+}
+.dttop .topdes .tit {
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.13rem;
+  color: #fff;
+}
+.dttop .topdes .rate {
+  background: url(../images/webapp/circle.png);
+  background-position: center;
+  background-size: cover;
+  width: 1.1rem;
+  min-height: 1.1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.dttop .topdes .rate div {
+  padding-top: 0.4rem;
+  font-size: 0.1rem;
+}
+.dttop .topdes .rate div span {
+  font-size: 0.22rem;
+}
+.dttop .topdes .rate div p {
+  padding-top: 0.1rem;
+  font-size: 0.1rem;
+  color: #fff;
+}
+.dttop .topdes .prstyle {
+  width: 100%;
+}
+.dttop .topdes .prstyle table {
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 0.1rem;
+}
+.dttop .topdes .prstyle td {
+  padding-bottom: 0.05rem;
+  text-align: center;
+}
+.dttop .topdes .prstyle td i.zhe {
+  background: url(../images/webapp/sprit.png) -225px 0;
+  width: 14px;
+  height: 14px;
+}
+.dttop .topdes .prstyle td span {
+  font-size: 0.2rem;
+}
+.dttop .topdes .prstyle td span,
+.dttop .topdes .prstyle td i {
+  vertical-align: middle;
+}
+.dttop .topdes .prstyle label {
+  color: #fff;
+  font-size: 0.1rem;
+}
+.tzprogress {
+  margin-top: 0.3rem;
+  font-size: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+.tzprogress table {
+  width: 100%;
+  text-align: center;
+}
+.tzprogress table .probar {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 5px;
+  height: 3px;
+  position: relative;
+  margin: 0.2rem 0;
+}
+.tzprogress table .probar .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #008fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 3px;
+}
+.tzprogress table td span {
+  color: #008fff;
+  font-size: 0.12rem;
+}
+.inputbox {
+  margin-top: 0.1rem;
+  background: #fff;
+  padding: 0.3rem 0.1rem;
+}
+.inputbox .allmoney span {
+  color: #000;
+  font-size: 0.14rem;
+}
+.inputbox .allmoney label {
+  font-size: 0.1rem;
+  padding-right: 0.1rem;
+}
+.inputbox .mui-numbox {
+  margin: 0.2rem auto 0;
+  border: none;
+  width: 2.9rem;
+  height: 0.34rem;
+  background: none;
+  padding: 0;
+  display: block;
+}
+.inputbox .mui-numbox .mui-numbox-input {
+  width: 2rem !important;
+  margin: 0 0.1rem 0 0.45rem;
+  border: #ddd solid 1px !important;
+  float: left;
+  border-radius: 5px !important;
+}
+.inputbox .mui-numbox .mui-btn {
+  border: #58b5ff solid 1px;
+  background: #e5f4ff;
+  border-radius: 5px;
+  width: 0.35rem;
+  float: left;
+  color: #58b5ff;
+  font-size: 0.15rem;
+}
+.inputbox .mui-numbox .mui-btn:disabled {
+  border: #ddd solid 1px;
+  background: #f4f4f4;
+  color: #ccc;
+}
+.inputbox .mui-numbox .mui-btn.mui-numbox-btn-plus {
+  right: auto;
+}
+.inputbox .zhuan {
+  margin: 0.15rem 0;
+  font-size: 0.1rem;
+}
+.inputbox .zhuan span {
+  color: #fe4040;
+}
+/************************************/
+/*dtdetail*/
+.prdetail .mui-segmented-control {
+  border: none;
+  background: #fafafa;
+  font-size: 0.12rem;
+}
+.prdetail .mui-segmented-control .mui-control-item {
+  color: #4c4c4c;
+  border-left: none;
+}
+.prdetail .mui-segmented-control .mui-control-item.mui-active {
+  border-left: none;
+  border-bottom: #008fff solid 2px;
+  background: none;
+  color: #008fff;
+}
+.prdetail .tabcont {
+  margin-top: 0.1rem;
+  background: #fff;
+}
+.prdetail .tabcont .prdesbox {
+  width: 100%;
+}
+.prdetail .tabcont .prdesbox tr th {
+  background: #e1f2ff;
+  padding: 5px 10px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.1rem;
+}
+.prdetail .tabcont .prdesbox tr th i {
+  background: url(../images/webapp/sprit.png) -172px 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.prdetail .tabcont .prdesbox tr th i,
+.prdetail .tabcont .prdesbox tr th span {
+  vertical-align: middle;
+}
+.prdetail .tabcont .prdesbox tr td {
+  padding: 10px 8px;
+  font-size: 0.1rem;
+}
+.prdetail .tabcont .prdesbox tr td:first-child {
+  color: #a8a8a8;
+  text-align: right;
+}
+.prdetail .tabcont .ztprtable td:nth-child(3) {
+  color: #a8a8a8;
+}
+.prdetail .tabcont .ztprtable td .pass {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background: url(../images/webapp/sprit.png) -200px 0;
+}
+.prdetail .tabcont .ztshenhe {
+  border-top: #F2F2F2 solid 10px;
+}
+.prdetail .tabcont .ztshenhe tr td {
+  color: #666;
+  padding-left: 0.25rem;
+}
+.prdetail .tabcont .ztshenhe tr td:first-child {
+  color: #666;
+  text-align: left;
+}
+.prdetail .tabcont .ztshenhe tr td .pass {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../images/webapp/sprit.png) -200px 0;
+  margin-right: 3px;
+}
+.prdetail .tabcont .ztshenhe tr td i,
+.prdetail .tabcont .ztshenhe tr td span {
+  vertical-align: middle;
+}
+.prdetail .tabcont .loaninfo li {
+  border-bottom: #EFEFF4 solid 5px;
+  padding: 5px 0.12rem;
+}
+.prdetail .tabcont .loaninfo li .loantit {
+  border-bottom: #eee solid 1px;
+  padding: 5px 0;
+}
+.prdetail .tabcont .loaninfo li .loantit i {
+  background: url(../images/webapp/sprit.png) -172px 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.prdetail .tabcont .loaninfo li .loantit i,
+.prdetail .tabcont .loaninfo li .loantit span,
+.prdetail .tabcont .loaninfo li .loantit label {
+  vertical-align: middle;
+  font-size: 0.1rem;
+}
+.prdetail .tabcont .loaninfo li .loantit label {
+  float: right;
+  padding-top: 3px;
+  color: #a8a8a8;
+}
+.prdetail .tabcont .loaninfo li .loantit label em {
+  font-style: normal;
+  color: #4c4c4c;
+}
+.prdetail .tabcont .loaninfo li table {
+  font-size: 0.1rem;
+  width: 100%;
+}
+.prdetail .tabcont .loaninfo li table th {
+  font-weight: 400;
+  text-align: right;
+  color: #a8a8a8;
+}
+.prdetail .tabcont .loaninfo li table td {
+  padding: 10px 0;
+}
+.prdetail .tabcont .syplan li table th,
+.prdetail .tabcont .syplan li table td {
+  text-align: center;
+  padding: 10px 0;
+}
+.prdetail .tabcont .syplan .tip {
+  background: #F2F2F2;
+  margin-top: -6px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+}
+.prdetail .tabcont .tableinfo ul {
+  background: #fff;
+  border-bottom: #F2F2F2 solid 10px;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.prdetail .tabcont .tableinfo ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 0.1rem;
+}
+.prdetail .tabcont .tableinfo ul li p {
+  padding-bottom: 10px;
+}
+.tablist {
+  width: 100%;
+  text-align: center;
+  font-size: 0.1rem;
+}
+.tablist tr th {
+  background: #e1f2ff;
+  padding: 0.15rem 0;
+}
+.tablist tr td {
+  padding: 0.12rem 0;
+  border-bottom: #ddd solid 1px;
+}

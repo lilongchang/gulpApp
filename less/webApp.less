@@ -1,0 +1,412 @@
+@import "mobileReset.less";
+/*index*/
+.block_home_slider {
+	
+	
+	background:#fff;
+	/*padding: 1px;*/
+	position: relative;
+	/*border: 4px solid #fff;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(js/PIE.htc); /*半透明兼容*/
+	text-align: center;
+	line-height: 0px;
+	margin-right: auto;
+	margin-left: auto;
+    z-index: 1;
+	
+} 
+.flex-viewport{border-bottom:#ddd solid 1px;} /*底部小图标*/
+.block_home_slider .slide {position:relative;}
+.block_home_slider .flex-control-paging {position: absolute;
+    bottom: 75px;
+    width: 100%;
+text-align: center;}
+.block_home_slider .flex-control-paging li {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	list-style-type: none;
+	position:relative;
+    display: inline-block;
+}
+.block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../images/webapp/sprite_nav_2.png);  cursor:pointer;
+
+    text-indent: -9000px;
+    cursor: pointer;
+}
+.block_home_slider .flex-control-paging li a.flex-active {background-position:right top; display:inline-block;}
+.flexslider {margin: 0; padding: 0; position:relative;}
+.flexslider .slides > li {
+	/*display: none;*/
+	-webkit-backface-visibility: hidden;
+	list-style-type: none;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img { width:100%;  display: block;}
+
+.middot{
+    background: #4c4c4c none repeat scroll 0 0;
+    border-radius: 6px;
+    display: inline-block;
+    height: 2px;
+    margin: 0 5px;
+    position: relative;
+    top: -4px;
+    width: 2px;
+}
+.menu{
+    width: 92%;
+    margin: -0.5rem auto 0.14rem;
+    position: relative;
+    z-index: 2;
+    ul{
+        background: #fff;
+        padding: 30px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px 0 #555;
+        li{
+            float: left;
+            text-align: center;
+            width: 33.3%;
+            a{
+                display: block;
+                img{
+                    width: 30%;
+                }
+                h2{
+                    margin-top: 20px;
+                    font-weight: 400;
+                }
+            }
+            
+        }
+    }
+    
+}
+.hotpro{
+    background: url(../images/webapp/hotpr_bg.png) no-repeat;
+    width: 92%;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    padding: 0.3rem 0 0.4rem;
+    //min-height: 210px;
+    overflow: hidden;
+    h3{
+        font-size: 0.16rem;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #595959;
+    }
+    .rate{
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+        }
+        text-align: center;
+        width: 40%;
+        margin-left: 8%;
+        padding-top: 0.4rem;
+        color: #008fff;
+        span{
+            font-size: 0.2rem;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 0.1rem;
+        }
+    }
+    .prest{
+        width: 42%;
+        padding-left: 8%;
+        padding-top: 15px;
+        p{
+            line-height: 0.25rem;
+            font-size: 0.1rem;
+        }
+        .big{
+            font-size: 0.16rem;
+        }
+    }
+}
+.safebox{
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+.index_prtit{
+    width: 100%;
+    background: #fff;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+.index_prlist{
+    li{
+        background: #fff;
+        margin:0 auto 0.1rem;
+        background: #fff;
+        &>div{
+            width: 94%;
+            margin: 0 auto;
+        }
+        .prname{
+            border-bottom: #eee solid 1px;
+            height: 0.3rem;
+            line-height: 0.25rem;
+            margin-bottom: 0.1rem;
+            font-size: 0.13rem;
+            i{
+                display: inline-block;
+                background: url(../images/webapp/sprit.png);
+                width:23px;
+                height: 24px;
+                padding-left: 0.03rem;
+                &.lou{
+                    background-position: 0 0;
+                }
+                &.ding{
+                     background-position: -31px 0;
+                }
+                &.xin{
+                     background-position: -63px 0;
+                }
+            }
+            i,span{
+                vertical-align: middle;
+            }
+        }
+        table{
+            width: 100%;
+            margin-bottom: 0.1rem;
+            tr{
+                td{
+                    color: #b0b0b0;
+                    font-size: 0.1rem;
+                    line-height: 0.2rem;
+                    &.rate{
+                        span{
+                            
+                            font-size: 0.25rem;
+                        } 
+                        color: #f00;
+                        text-align: left;
+                        width: 40%;
+                    }
+                    &.month{
+                        span{
+                            font-size: 0.2rem;
+                        }
+                        color: #4c4c4c;
+                        width: 15%;
+                            
+                    }
+                    &.leftmoney{
+                        text-align: right;
+                        span{
+                            font-size: 0.16rem;
+                        }
+                        color: #4c4c4c;
+                        width: 45%;
+                    }
+                    .ratechart{
+                        width: 83%;
+                        background: #f1f1f1;
+                        border-radius: 3px;
+                        height: 3px;
+                        position: relative;
+                        float: left;
+                        margin-top: 10px;
+                        .progress{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background: #008fff;
+                            border-radius: 3px;
+                            display: inline-block;
+                            height: 3px;
+                        }
+                    }
+                    .ratepercent{
+                        float: left;
+                        width: 17%;
+                        color: #008fff;
+                        font-size: 0.11rem;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+/******************************************************/
+/*dtlist*/
+.dttop{
+    position: relative;
+    overflow: hidden;
+    .bgpic{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 1;
+        display: block;
+    }
+    .topdes{
+        width: 100%;
+        margin:  0 auto;
+        padding: 0.1rem 0;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+        top:0.06rem;
+        p{
+            color: #fff;
+        }
+        .tit{
+            text-align: center;
+            line-height: 0.4rem;
+            font-size: 0.13rem;
+            color: #fff;
+        }
+        .rate{
+            background: url(../images/webapp/circle.png);
+            background-position: center;
+            background-size: cover;
+            width: 1.1rem;
+            min-height: 1.1rem;
+            margin: 0 auto;
+            text-align: center;
+            div{
+                padding-top: 0.4rem;
+                font-size: 0.1rem;
+                span{
+                    font-size: 0.22rem;
+                }
+                p{
+                    padding-top: 0.1rem;
+                    font-size: 0.1rem;
+                    color: #fff;
+                }
+            }
+        }
+        .prstyle{
+            width: 100%;
+            table{
+                width:100%;
+                table-layout: fixed;
+                margin-top: 0.1rem;
+            }
+            
+            td{
+                padding-bottom: 0.05rem;
+                text-align: center;
+                
+                span{
+                    font-size: 0.2rem;
+                }
+                
+            }
+            label{
+                    color: #fff;
+                    font-size: 0.1rem;
+                }
+            
+        }
+    }
+}
+.tzprogress{
+    margin-top:0.3rem;
+    font-size: 0.1rem;
+    padding-bottom: 0.2rem;
+    table{
+        width: 100%;
+        text-align: center;
+        .probar{
+            position: relative;
+            width: 100%;
+            background: #f1f1f1;
+            border-radius: 5px;
+            height: 3px;
+            position: relative;
+            margin: 0.2rem 0;
+            .progress{
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #008fff;
+                border-radius: 5px;
+                display: inline-block;
+                height: 3px;
+            }
+        }
+        td{
+            span{
+                color: @blue;
+                font-size: 0.12rem;
+            }
+            .more{
+                
+            }
+        }
+    }
+}
+.inputbox{
+    margin-top: 0.1rem;
+    background: #fff;
+    padding: 0.3rem 0.1rem;
+    .allmoney{
+        span{
+            color: #000;
+            font-size: 0.14rem;
+        }
+        label{
+            font-size: 0.1rem;
+            padding-right: 0.1rem;
+        }
+    }
+    .mui-numbox{
+        margin: 0.2rem auto 0;
+        border: none;
+        width: 2.9rem;
+        height:0.34rem;
+        background: none;
+        padding: 0;
+        display: block;
+        .mui-numbox-input{
+            width: 2rem !important;
+            margin:0 0.1rem 0 0.45rem;
+            border: #ddd solid 1px !important;
+            float: left;
+            border-radius: 5px !important;
+        }
+        .mui-btn{
+            border: #58b5ff solid 1px;
+            background: #e5f4ff;
+            border-radius: 5px;
+            width: 0.35rem;
+            float: left;
+            &:disabled{
+                border: #ddd solid 1px;
+                background: #f4f4f4;
+            }
+            &.mui-numbox-btn-plus{
+                right: auto;
+            }
+        }
+    }
+    .zhuan{
+        margin: 0.15rem 0;
+        font-size: 0.1rem;
+        span{
+            color: #fe4040;
+        }
+    }
+   
+}

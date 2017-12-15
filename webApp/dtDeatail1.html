@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<!--<link rel="stylesheet" href="../css/style.css">-->
+<link rel="stylesheet" href="../css/mobileWeb/mui.css">
+<link rel="stylesheet" href="../css/mobileWeb/mobileReset.css">
+<link rel="stylesheet" href="../css/mobileWeb/webApp.css">
+
+<script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../js/mobile/mui.min.js"></script>
+<title>投呗-定投详情</title>
+<style>
+
+</style>
+</head>
+
+<body class="">
+<div class="wrap fffbg">
+    
+    <div class="dttop">
+       <div class="backbar">
+          <div class="backicon">
+              <i class="mui-icon mui-icon-back white"></i>
+          </div>
+       </div>   
+        <img src="../images/webapp/dtdes-banner.jpg" class="bgpic">
+        <div class="topdes">
+            <p class="tit">定投21211212</p>
+            <div class="rate">
+                <div><span>8.00%</span><p>年化收益率</p></div>
+            </div>
+            <div class="prstyle col3">
+                <table>
+                    <tr>
+                        <td><span>3</span>个月</td>
+                        
+                        <td>一次性还本付息</td>
+                    </tr>
+                    <tr>
+                        <td><label>期数</label></td>
+                        
+                        <td><label>还款方式</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    <div class="tzprogress">
+        <table>
+            <tr>
+                <td rowspan="3" width="30%">投资进度</td>
+                <td  class="center lightgrey" width="48%" >剩余份数：<span>100份</span></td>
+                <td rowspan="3" width="22%" class="blueword">90%</td>
+            </tr>
+            <tr>
+                <td >
+                    <div class="probar"><span style="width:90%;"  class="progress"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="center"><a href="#" class="lightgrey more">查看更多详情>></a></td>
+            </tr>
+        </table>
+    </div>
+    
+</div>
+<div class="inputbox">
+    <div class="allmoney"><label>账户余额</label><span class="">1200.00</span><a href="#" class="fr blueword">充值</a></div>
+    <div class="mui-numbox" data-numbox-step='10' data-numbox-min='0' data-numbox-max='100'>
+          <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+          <input class="mui-numbox-input s" type="number" />
+          <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+    </div>
+    <div class="center zhuan">预期收益：<span>2530.00</span></div>
+    <div class="center buybtn"><a href="#" class="radiusbtn bluebg greybg">立即投资</a></div><!--bluebg是蓝色按钮，greybg是灰色按钮-->
+    
+</div>
+ <script>
+     
+     
+        $(".s").click(function(){
+            $('.mui-numbox-input').attr('type','text');
+            $('.mui-numbox-input').val('满标');
+            $('.mui-numbox-input').attr('disabled','disabled');
+            $('.mui-numbox-btn-minus,.mui-numbox-btn-plus').attr('disabled','disabled');
+        
+        })
+
+     
+</script>   
+</body>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

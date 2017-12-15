@@ -1,0 +1,244 @@
+/*reset*/
+html {
+  font-size: 100px;
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 117.1875px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 129.375px;
+  }
+}
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu,
+img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+th {
+  font-weight: 400;
+}
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+s {
+  text-decoration: none;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei', arial, SimSun, sans-serif, tahoma;
+}
+a {
+  color: #4c4c4c;
+}
+a:active {
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft Yahei", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+.greyword {
+  color: #999;
+  font-size: 0.1rem;
+}
+.disnone {
+  display: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.redword {
+  color: #ff4040;
+}
+.lightgrey {
+  color: #a8a8a8;
+}
+.blueword {
+  color: #008fff;
+}
+.radiusbtn {
+  width: 70%;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.16rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.listbtn {
+  width: 0.8rem;
+  height: 0.22rem;
+  line-height: 0.22rem;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: 0.11rem;
+}
+.wrap {
+  width: 100%;
+  position: relative;
+}
+.wrap.mui-content {
+  padding-top: 0.3rem;
+}
+.wrap {
+  background: #F2F2F2;
+}
+.wrap img {
+  width: 100%;
+}
+.fffbg {
+  background: #fff;
+}
+.bluebgbar {
+  background: #008fff;
+  color: #fff;
+}
+.bluebgbar a {
+  color: #fff;
+}
+.bluebgbar a:active {
+  color: #fff;
+}
+.bluebgbar a:after {
+  color: #fff;
+}
+.bluebg {
+  background: #008fff;
+  box-shadow: 0 12px 35px 0 #74bef9;
+}
+.greybg {
+  background: #ddd;
+  box-shadow: none;
+}
+.greybluebg {
+  background: #6fb2e7;
+  box-shadow: 0 12px 35px 0 #6fb2e7;
+}
+.fs12 {
+  font-size: 0.1rem;
+}
+.backbar {
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0;
+  line-height: 40px;
+}
+.backbar .backicon {
+  width: 33.33%;
+  float: left;
+}
+.backbar .backicon .mui-icon {
+  margin-left: 0.1rem;
+}
+.backbar .backicon .mui-icon.white {
+  color: #fff;
+}
+.backbar .backicon .mui-icon.blue {
+  color: #008fff;
+}
+.backbar .pagetit {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+.backbar .more {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}

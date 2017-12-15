@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<title>首页</title>
+</head>
+
+<body>
+	<div class="com_bot clearfix">
+		<a class="com_bot_ft">
+			<i class="active"></i>
+		</a>
+		<a class="com_bot_rt">
+			<i class=""></i>
+		</a>
+	</div>
+</body>
+<script>
+	$('.com_bot a').on('click',function(){
+		$(this).find('i').addClass('active');
+		$(this).siblings().find('i').removeClass();
+	});
+</script>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

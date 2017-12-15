@@ -1,0 +1,23 @@
+﻿{
+	"name": "my-project-name",
+	"version": "0.1.0",
+	"devDependencies": {
+		"gulp":"latest",
+		"express":"latest",
+		"del":"latest",
+		"gulp-livereload":"latest",
+		"gulp-less":"latest",
+		"gulp-express":"latest",
+		"gulp-server-livereload":"latest",
+		"gulp-seajs-combo":"latest",
+		"gulp-uglify":"latest",
+		"gulp-concat":"latest",
+		"gulp-rename":"latest",
+		"gulp-jshint":"latest",
+		"gulp-file-include":"latest",
+		"gulp-copy":"latest"
+	},
+	"dependencies": {
+	}
+}
+

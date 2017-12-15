@@ -1,0 +1,1257 @@
+/*共用样式 START*/
+body {
+  background: #fff;
+  min-width: 0;
+}
+.backBtn {
+  /*返回按钮*/
+  padding: 0 16px;
+  /*logo图标*/
+}
+.backBtn .backBtn_ft {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #7c7c7c;
+}
+.backBtn .backBtn_ft i {
+  margin-left: -7px;
+  color: rgba(124, 124, 124, 0.9);
+}
+.backBtn .backBtn_ft a {
+  color: #7c7c7c;
+}
+.backBtn .zzl_glogin {
+  margin: 34px 0 41px 0;
+}
+.backBtn .zzl_glogin div {
+  text-align: center;
+}
+.backBtn .zzl_glogin div img {
+  width: 27%;
+}
+.backBtn .zzl_glogin div p {
+  color: #008fff;
+  font-size: 0.2rem;
+  font-weight: 700;
+}
+.mBackBtn {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.05rem;
+  color: #fff;
+}
+/*共用样式 END*/
+/*登录页面 START */
+.login {
+  padding: 0 16px;
+}
+.login .closed {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+.login .closed i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-top: 12px;
+  background: url('../images/webapp/close.png');
+  background-size: 100%;
+}
+.login .zzl_glogin {
+  margin: 34px 0 41px 0;
+}
+.login .zzl_glogin div {
+  text-align: center;
+}
+.login .zzl_glogin div img {
+  width: 27%;
+}
+.login .zzl_glogin div p {
+  color: #008fff;
+}
+.login .user_name {
+  width: 100%;
+  position: relative;
+}
+.login .user_name span {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+}
+.login .user_name input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.login .user_word {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+.login .user_word span {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+}
+.login .user_word input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.login .userReg_check {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  display: none;
+}
+.login .userReg_check .userReg_check_ft {
+  width: 60%;
+  float: left;
+}
+.login .userReg_check .userReg_check_ft span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  background: url('../images/webapp/check01.png');
+  background-size: 100% 100%;
+}
+.login .userReg_check .userReg_check_ft input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.login .userReg_check .userReg_check_rt {
+  width: 40%;
+  float: left;
+}
+.login .userReg_check .userReg_check_rt .img {
+  /*width: 45%;*/
+  float: left;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  margin: 0 6%;
+}
+.login .userReg_check .userReg_check_rt .img img {
+  /*width: 90%;*/
+  width: 62px;
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+}
+.login .userReg_check .userReg_check_rt .changeImg {
+  color: #7c7c7c;
+  font-size: 0.12rem;
+  margin-top: 4px;
+  height: 30px;
+  line-height: 30px;
+}
+.login .landing {
+  width: 100%;
+  height: 36px;
+  margin-top: 13px;
+}
+.login .landing button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #008fff;
+  border-radius: 50px;
+  font-size: 0.16rem;
+  color: #fff;
+  border: 1px solid #007aff;
+}
+.login .landing .forget {
+  width: 100%;
+  margin-top: 13px;
+}
+.login .landing .forget div {
+  width: 50%;
+  float: left;
+}
+.login .landing .forget .forgetWord {
+  float: right;
+  padding-right: 25px;
+  color: #008fff;
+  font-size: 0.14rem;
+  margin-top: 1px;
+  border-right: 1px solid #008fff;
+}
+.login .landing .forget .reg {
+  margin-left: 25px;
+  color: #008fff;
+  font-size: 0.14rem;
+}
+/*登录页面 END */
+/*注册页面 START */
+.backBtn {
+  padding: 0 16px;
+}
+.backBtn .userReg_phone {
+  width: 100%;
+  position: relative;
+}
+.backBtn .userReg_phone span {
+  display: block;
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  top: 6px;
+  left: 1px;
+  background: url('../images/webapp/phone.png');
+  background-size: 100% 100%;
+}
+.backBtn .userReg_phone input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.backBtn .userReg_check {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+.backBtn .userReg_check .userReg_check_ft {
+  width: 60%;
+  float: left;
+}
+.backBtn .userReg_check .userReg_check_ft span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  background: url('../images/webapp/check01.png');
+  background-size: 100% 100%;
+}
+.backBtn .userReg_check .userReg_check_ft input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.backBtn .userReg_check .userReg_check_rt {
+  width: 40%;
+  float: left;
+}
+.backBtn .userReg_check .userReg_check_rt .img {
+  /*width: 45%;*/
+  float: left;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  margin: 0 6%;
+}
+.backBtn .userReg_check .userReg_check_rt .img img {
+  /*width: 90%;*/
+  width: 62px;
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+}
+.backBtn .userReg_check .userReg_check_rt .changeImg {
+  color: #7c7c7c;
+  font-size: 0.12rem;
+  margin-top: 4px;
+  height: 30px;
+  line-height: 30px;
+}
+.backBtn .inputNumber {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+.backBtn .inputNumber .inputNumber_check_ft {
+  width: 60%;
+  float: left;
+}
+.backBtn .inputNumber .inputNumber_check_ft span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  background: url('../images/webapp/check01.png');
+  background-size: 100% 100%;
+}
+.backBtn .inputNumber .inputNumber_check_ft input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.backBtn .inputNumber .inputNumber_check_rt {
+  width: 40%;
+  float: left;
+  margin-top: 1%;
+  text-align: center;
+}
+.backBtn .inputNumber .inputNumber_check_rt button {
+  width: 90%;
+  display: inline-block;
+  background: #008fff;
+  color: #feffff;
+  border: 1px solid #008fff;
+  padding: 6px 0px;
+  font-size: 0.12rem;
+}
+.backBtn .nextSep {
+  width: 100%;
+  height: 36px;
+  margin-top: 13px;
+}
+.backBtn .nextSep button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #008fff;
+  border-radius: 50px;
+  font-size: 0.16rem;
+  color: #fff;
+  border: 1px solid #007aff;
+}
+.backBtn .nextSep .forget {
+  width: 100%;
+  margin-top: 13px;
+  padding-bottom: 20px;
+}
+.backBtn .nextSep .forget div {
+  width: 100%;
+  color: #b6b6b6;
+  text-align: center;
+  font-size: 0.14rem;
+}
+.backBtn .nextSep .forget .forgetWord {
+  padding-right: 25px;
+  color: #008fff;
+  font-size: 0.14rem;
+  margin-top: 1px;
+  text-align: center;
+}
+/*注册页面 END */
+/*注册下一步页面 START */
+/*注：返回按钮，新用户注册图标共用*/
+.reg_next {
+  padding: 0 16px;
+}
+.reg_next .user .user_name {
+  width: 100%;
+  position: relative;
+}
+.reg_next .user .user_name span {
+  position: absolute;
+  top: 6px;
+  left: -3px;
+  color: #bfbfbf;
+}
+.reg_next .user .user_name input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.reg_next .user .user_word {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.reg_next .user .user_word span {
+  position: absolute;
+  top: 6px;
+  left: -3px;
+  color: #bfbfbf;
+}
+.reg_next .user .user_word input {
+  padding-left: 30px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+}
+.reg_next .user .consumer_number span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 0px;
+  background: url(../images/webapp/check_number.png);
+  background-size: 100% 100%;
+}
+.reg_next .landing {
+  width: 100%;
+  height: 36px;
+  margin-top: 13px;
+}
+.reg_next .landing button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #008fff;
+  border-radius: 50px;
+  font-size: 0.16rem;
+  color: #fff;
+  border: 1px solid #007aff;
+}
+.reg_next .landing .forget {
+  width: 100%;
+  margin-top: 13px;
+  padding-bottom: 20px;
+}
+.reg_next .landing .forget div {
+  width: 100%;
+  color: #b6b6b6;
+  text-align: center;
+  font-size: 0.14rem;
+}
+.reg_next .landing .forget .forgetWord {
+  padding-right: 25px;
+  color: #008fff;
+  font-size: 0.14rem;
+  margin-top: 1px;
+  text-align: center;
+}
+/*注册下一步页面 END */
+/*忘记密码第一步页面 START */
+.backBtn {
+  background: #fff;
+}
+.backBtn .backBtn_ft .back {
+  width: 33.333333%;
+  float: left;
+}
+.backBtn .backBtn_ft .tit {
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  color: #383838;
+}
+.forget_password {
+  padding: 0 16px;
+  margin-top: 12px;
+  background: #fff;
+}
+.forget_password input {
+  display: block;
+  height: 52px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  color: #b3b3b3;
+  font-size: 0.16rem;
+  padding: 0 0 0 30px;
+  margin-bottom: 0;
+}
+.forget_password .userReg_phone {
+  width: 100%;
+  position: relative;
+}
+.forget_password .userReg_phone span {
+  display: block;
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  top: 11px;
+  left: 2px;
+  background: url('../images/webapp/forget_icon.png') no-repeat 0px 2px;
+}
+.forget_password .userReg_check {
+  width: 100%;
+  position: relative;
+}
+.forget_password .userReg_check .userReg_check_ft {
+  width: 100%;
+}
+.forget_password .userReg_check .userReg_check_ft span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  background: url('../images/webapp/forget_icon.png') no-repeat 0px -24px;
+}
+.forget_password .userReg_check .userReg_check_rt {
+  width: 40%;
+  position: absolute;
+  top: 11px;
+  right: 0px;
+}
+.forget_password .userReg_check .userReg_check_rt .img {
+  float: left;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  margin: 0 6%;
+}
+.forget_password .userReg_check .userReg_check_rt .img img {
+  /*width: 90%;*/
+  width: 62px;
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+}
+.forget_password .userReg_check .userReg_check_rt .changeImg {
+  color: #7c7c7c;
+  font-size: 0.12rem;
+  height: 32px;
+  line-height: 32px;
+}
+.forget_password .inputNumber {
+  width: 100%;
+  position: relative;
+}
+.forget_password .inputNumber .inputNumber_check_ft {
+  width: 100%;
+}
+.forget_password .inputNumber .inputNumber_check_ft span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  background: url('../images/webapp/forget_icon.png') no-repeat 0px -24px;
+}
+.forget_password .inputNumber .inputNumber_check_ft input {
+  border: none;
+}
+.forget_password .inputNumber .inputNumber_check_rt {
+  width: 40%;
+  position: absolute;
+  top: 11px;
+  right: 0px;
+  text-align: center;
+}
+.forget_password .inputNumber .inputNumber_check_rt button {
+  width: 90%;
+  display: inline-block;
+  background: #008fff;
+  color: #feffff;
+  border: 1px solid #008fff;
+  padding: 6px 0px;
+  font-size: 0.14rem;
+}
+.nextSep {
+  width: 100%;
+  height: 36px;
+  margin-top: 66px;
+  padding: 0 16px;
+}
+.nextSep button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #008fff;
+  border-radius: 50px;
+  font-size: 0.16rem;
+  color: #fff;
+  border: 1px solid #008fff;
+}
+.nextSep button a {
+  color: #fff;
+}
+/*忘记密码第一步页面 END */
+/*忘记密码第二步页面 START */
+.forget_pd_second .userReg_phone span {
+  background: url(../images/webapp/locked.png) no-repeat 0px 0px;
+  width: 25px;
+  left: 0px;
+}
+.forget_pd_second .userReg_check .userReg_check_ft span {
+  background: url(../images/webapp/locked.png) no-repeat 0px 0px;
+  height: 25px;
+  width: 25px;
+  left: 0px;
+  top: 11px;
+}
+.forget_pd_second .userReg_check .userReg_check_ft input {
+  border: none;
+}
+/*忘记密码第二步页面 END */
+/*优选系列页面 START */
+.wrap .header {
+  margin-top: -5px;
+  width: 100%;
+  background: url(../images/webapp/invest_d01.png) no-repeat 0px 0px;
+  background-size: 100% 100%;
+  position: relative;
+}
+.wrap .header h1 {
+  padding: 0.6rem 0 0 0;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.wrap .header p {
+  padding: 0 0 0.6rem 0;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.wrap .header p i {
+  font-weight: 900;
+}
+.wrap .list_common {
+  position: relative;
+  margin-top: -25px;
+}
+.wrap .list_common img {
+  width: 100%;
+  z-index: 10;
+}
+.wrap .list_common .content {
+  width: 90%;
+  height: 79%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 11;
+}
+.wrap .list_common .content .top {
+  width: 100%;
+  height: 75%;
+  color: #fff;
+}
+.wrap .list_common .content .top .top_lt {
+  float: left;
+  padding-top: 13%;
+  padding-left: 10%;
+}
+.wrap .list_common .content .top .top_lt span {
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+.wrap .list_common .content .top .top_rt {
+  float: right;
+  width: 27%;
+  height: 75%;
+  line-height: 75%;
+  background: url(../images/webapp/ty.png) no-repeat 0px 0px;
+  background-size: 100% 100%;
+  margin: 4.5% 10% 0 0;
+  text-align: center;
+  color: #ff4040;
+  position: relative;
+}
+.wrap .list_common .content .top .top_rt .cen {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 0px;
+}
+.wrap .list_common .content .top .top_rt span {
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+.wrap .list_common .content .top .top_rt p {
+  color: #e8e9ef;
+  line-height: 30px;
+  font-size: 0.12rem;
+}
+.wrap .list_common .content .bottom {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  height: 26%;
+  display: table;
+}
+.wrap .list_common .content .bottom .number {
+  font-size: 0.2rem;
+  font-weight: 600;
+  color: #008fff;
+}
+.wrap .list_common .content .bottom p {
+  margin: 0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/*优选系列页面 END */
+/*定期投资页面 START */
+.wrap_dt .header {
+  margin-top: -5px;
+  width: 100%;
+  background: url(../images/webapp/invest_dq02.png) no-repeat 0px 0px;
+  background-size: 100% 100%;
+  position: relative;
+}
+.wrap_dt .header h1 {
+  padding: 0.6rem 0;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.wrap_dt .contain {
+  padding: 0 0.1rem;
+  margin-top: 0.15rem;
+  background: #fff;
+}
+.wrap_dt .contain .dq_list {
+  width: 100%;
+}
+.wrap_dt .contain .dq_list h5 {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+  margin: 0;
+  background: url(../images/webapp/d_01.png) no-repeat left center;
+  background-size: 25px 25px;
+  color: #666666;
+  font-size: 0.16rem;
+  font-weight: 100;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrap_dt .contain .dq_list .cen {
+  width: 100%;
+  height: 1rem;
+}
+.wrap_dt .contain .dq_list .cen .cen_ft {
+  float: left;
+  width: 35%;
+  text-align: left;
+  margin-top: 0.3rem;
+  color: #ff6363;
+}
+.wrap_dt .contain .dq_list .cen .cen_ft .number_dq {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #ff4040;
+}
+.wrap_dt .contain .dq_list .cen .cen_ft p {
+  color: #b0b0b0;
+}
+.wrap_dt .contain .dq_list .cen .cen_ct {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-top: 0.3rem;
+  color: #4d4d4d;
+}
+.wrap_dt .contain .dq_list .cen .cen_ct span {
+  font-size: 0.2rem;
+  font-weight: 100;
+  color: #4d4d4d;
+}
+.wrap_dt .contain .dq_list .cen .cen_ct p {
+  color: #b0b0b0;
+}
+.wrap_dt .contain .dq_list .cen .cen_rt {
+  float: left;
+  width: 35%;
+  text-align: right;
+  margin-top: 0.32rem;
+}
+.wrap_dt .contain .dq_list .cen .cen_rt span {
+  color: #4d4d4d;
+}
+.wrap_dt .contain .dq_list .progress {
+  padding-bottom: 0.2rem;
+  width: 85%;
+  position: relative;
+}
+.wrap_dt .contain .dq_list .progress .pro_wrap {
+  width: 100%;
+  height: 3px;
+  background: #eeeeee;
+}
+.wrap_dt .contain .dq_list .progress .pro_wrap .percent {
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #008fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+.wrap_dt .contain .dq_list .progress .pro_wrap .per_num {
+  font-size: 0.17rem;
+  color: #67afff;
+  position: absolute;
+  right: -18%;
+  bottom: 0.11rem;
+}
+.wrap_dt .contain .dq_list_d h5 {
+  background: url(../images/webapp/d_02.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.wrap_dt .contain .dq_list_d .cen .cen_ft {
+  color: #b3b3b3;
+}
+.wrap_dt .contain .dq_list_d .cen .cen_ft .number_dq {
+  color: #b3b3b3;
+}
+.wrap_dt .contain .dq_list_d .cen .cen_ct {
+  color: #b3b3b3;
+}
+.wrap_dt .contain .dq_list_d .cen .cen_ct span {
+  color: #b3b3b3;
+}
+.wrap_dt .contain .dq_list_d .cen .cen_rt {
+  color: #b3b3b3;
+}
+.wrap_dt .contain .dq_list_d .cen .cen_rt span {
+  color: #b3b3b3;
+}
+.wrap_dt .contain .dq_list_d .progress .pro_wrap .percent {
+  width: 100%;
+  background: #d6d6d6;
+}
+.wrap_dt .contain .dq_list_d .progress .pro_wrap .per_num {
+  color: #b3b3b3;
+}
+/*定期投资页面 END */
+/*自选系列页面 START */
+.wrap_zx .header {
+  margin-top: -5px;
+  width: 100%;
+  background: url(../images/webapp/invest_zx.jpg) no-repeat 0px 0px;
+  background-size: 100% 100%;
+  position: relative;
+}
+.wrap_zx .header h1 {
+  padding-top: 0.6rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.wrap_zx .header p {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.1rem;
+  color: #fff;
+}
+.wrap_zx .container {
+  padding: 0 0.1rem;
+  margin-top: 0.15rem;
+  background: #fff;
+}
+.wrap_zx .container .dq_list {
+  width: 100%;
+}
+.wrap_zx .container .dq_list h5 {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+  margin: 0;
+  background: url(../images/webapp/xin.png) no-repeat left center;
+  background-size: 25px 25px;
+  color: #666666;
+  font-size: 0.16rem;
+  font-weight: 100;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrap_zx .container .dq_list .cen {
+  width: 100%;
+  height: 1rem;
+}
+.wrap_zx .container .dq_list .cen .cen_ft {
+  float: left;
+  width: 35%;
+  text-align: left;
+  margin-top: 0.3rem;
+  color: #ff6363;
+}
+.wrap_zx .container .dq_list .cen .cen_ft .number_dq {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #ff4040;
+}
+.wrap_zx .container .dq_list .cen .cen_ft p {
+  color: #b0b0b0;
+}
+.wrap_zx .container .dq_list .cen .cen_ct {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-top: 0.3rem;
+  color: #4d4d4d;
+}
+.wrap_zx .container .dq_list .cen .cen_ct span {
+  font-size: 0.2rem;
+  font-weight: 100;
+  color: #4d4d4d;
+}
+.wrap_zx .container .dq_list .cen .cen_ct p {
+  color: #b0b0b0;
+}
+.wrap_zx .container .dq_list .cen .cen_rt {
+  float: left;
+  width: 35%;
+  text-align: right;
+  margin-top: 0.29rem;
+}
+.wrap_zx .container .dq_list .cen .cen_rt span {
+  color: #4d4d4d;
+}
+.wrap_zx .container .dq_list .progress {
+  padding-bottom: 0.2rem;
+  width: 85%;
+  position: relative;
+}
+.wrap_zx .container .dq_list .progress .pro_wrap {
+  width: 100%;
+  height: 3px;
+  background: #eeeeee;
+}
+.wrap_zx .container .dq_list .progress .pro_wrap .percent {
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #008fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+.wrap_zx .container .dq_list .progress .pro_wrap .per_num {
+  font-size: 0.17rem;
+  color: #67afff;
+  position: absolute;
+  right: -18%;
+  bottom: 0.11rem;
+}
+.wrap_zx .container .dq_list_d h5 {
+  background: url(../images/webapp/xin_1.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.wrap_zx .container .dq_list_d .cen .cen_ft {
+  color: #b3b3b3;
+}
+.wrap_zx .container .dq_list_d .cen .cen_ft .number_dq {
+  color: #b3b3b3;
+}
+.wrap_zx .container .dq_list_d .cen .cen_ct {
+  color: #b3b3b3;
+}
+.wrap_zx .container .dq_list_d .cen .cen_ct span {
+  color: #b3b3b3;
+}
+.wrap_zx .container .dq_list_d .cen .cen_rt {
+  color: #b3b3b3;
+}
+.wrap_zx .container .dq_list_d .cen .cen_rt span {
+  color: #b3b3b3;
+}
+.wrap_zx .container .dq_list_d .progress .pro_wrap .percent {
+  width: 100%;
+  background: #d6d6d6;
+}
+.wrap_zx .container .dq_list_d .progress .pro_wrap .per_num {
+  color: #b3b3b3;
+}
+/*自选系列页面 END */
+/*变现转让页面 START */
+.mui-pull-top-pocket {
+  top: 70px;
+}
+.wrap_zr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
+.wrap_zr .title {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: #fff;
+}
+.wrap_zr .title .tit_ft {
+  width: 33.333333%;
+  float: left;
+}
+.wrap_zr .title .tit_ft span {
+  margin-left: 0.05rem;
+  color: #008fff;
+}
+.wrap_zr .title .tit_ft span i {
+  font-weight: bold;
+}
+.wrap_zr .title .tit_cen {
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  color: #383838;
+}
+.wrap_zr .zr_sort {
+  width: 100%;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  background: #fafafa;
+  border-top: 1px solid  #f3f3f3;
+}
+.wrap_zr .zr_sort li {
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  height: 0.35rem;
+  line-height: 0.35rem;
+}
+.wrap_zr .zr_sort li a {
+  text-align: center;
+  color: #666666;
+  font-size: 0.14rem;
+}
+.wrap_zr .zr_sort li i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/webapp/sort_1.png) no-repeat 0px 0px;
+  vertical-align: middle;
+  margin-left: 0.05rem;
+  background-size: 50% 100%;
+}
+.wrap_zr .zr_sort .active {
+  border-bottom: 2px solid #008fff;
+}
+.wrap_zr .zr_sort .active a {
+  color: #008fff;
+}
+.wrap_zr .zr_sort .active .onup i {
+  background: url(../images/webapp/sort_up.png) no-repeat 0px 0px;
+  background-size: 50% 100%;
+}
+.wrap_zr .zr_sort .active .ondown i {
+  background: url(../images/webapp/sort_down.png) no-repeat 0px 0px;
+  background-size: 50% 100%;
+}
+.wrap_zrList .container {
+  padding: 0 0.1rem;
+  margin-top: 0.9rem;
+  background: #fff;
+}
+.wrap_zrList .container .dq_list {
+  width: 100%;
+}
+.wrap_zrList .container .dq_list h5 {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+  margin: 0;
+  background: url(../images/webapp/xin.png) no-repeat left center;
+  background-size: 25px 25px;
+  color: #666666;
+  font-size: 0.16rem;
+  font-weight: 100;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrap_zrList .container .dq_list .cen {
+  width: 100%;
+  height: 1rem;
+}
+.wrap_zrList .container .dq_list .cen .cen_ft {
+  float: left;
+  width: 30%;
+  text-align: left;
+  margin-top: 0.3rem;
+  color: #ff6363;
+}
+.wrap_zrList .container .dq_list .cen .cen_ft .number_dq {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #ff4040;
+}
+.wrap_zrList .container .dq_list .cen .cen_ft p {
+  color: #b0b0b0;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct {
+  float: left;
+  width: 40%;
+  text-align: center;
+  margin-top: 0.3rem;
+  color: #4d4d4d;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct .cen_ct_ft {
+  float: left;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct .cen_ct_ft span {
+  font-size: 0.2rem;
+  font-weight: 100;
+  color: #4d4d4d;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct .cen_ct_ft p {
+  color: #b0b0b0;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct .cen_ct_rt {
+  float: right;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct .cen_ct_rt span {
+  font-size: 0.2rem;
+  font-weight: 100;
+  color: #4d4d4d;
+}
+.wrap_zrList .container .dq_list .cen .cen_ct .cen_ct_rt p {
+  color: #b0b0b0;
+}
+.wrap_zrList .container .dq_list .cen .cen_rt {
+  float: left;
+  width: 30%;
+  text-align: right;
+  margin-top: 0.29rem;
+}
+.wrap_zrList .container .dq_list .cen .cen_rt span {
+  color: #4d4d4d;
+}
+.wrap_zrList .container .dq_list .progress {
+  padding-bottom: 0.2rem;
+  width: 85%;
+  position: relative;
+}
+.wrap_zrList .container .dq_list .progress .pro_wrap {
+  width: 100%;
+  height: 3px;
+  background: #eeeeee;
+}
+.wrap_zrList .container .dq_list .progress .pro_wrap .percent {
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #008fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+.wrap_zrList .container .dq_list .progress .pro_wrap .per_num {
+  font-size: 0.17rem;
+  color: #67afff;
+  position: absolute;
+  right: -18%;
+  bottom: 0.11rem;
+}
+.wrap_zrList .container .dq_list_d h5 {
+  background: url(../images/webapp/xin_1.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_ft {
+  color: #b3b3b3;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_ft .number_dq {
+  color: #b3b3b3;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_ct {
+  color: #b3b3b3;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_ct .cen_ct_ft span {
+  color: #b0b0b0;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_ct .cen_ct_rt {
+  float: right;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_ct .cen_ct_rt span {
+  color: #b0b0b0;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_rt {
+  color: #b3b3b3;
+}
+.wrap_zrList .container .dq_list_d .cen .cen_rt span {
+  color: #b0b0b0;
+}
+.wrap_zrList .container .dq_list_d .progress .pro_wrap .percent {
+  width: 100%;
+  background: #d6d6d6;
+}
+.wrap_zrList .container .dq_list_d .progress .pro_wrap .per_num {
+  color: #b3b3b3;
+}
+/*变现转让页面 END */
+/*我的账户页面START */
+.my_count {
+  line-height: 0;
+  background: #0230bc;
+}
+.my_count img {
+  width: 100%;
+}
+.my_count .my_count_top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  padding: 0 0.12rem;
+}
+.my_count .my_count_top .close_ft i {
+  display: block;
+  width: 0.25rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.125rem;
+  background: url(../images/webapp/count_show.png) no-repeat;
+  background-size: 100% 100%;
+}
+.my_count .my_count_top .mycount_cen {
+  width: 36%;
+  margin: 0 auto;
+}
+.my_count .my_count_top .mycount_cen ul {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #91a7e6;
+  line-height: 0.3rem;
+  margin-top: 0.075rem;
+}
+.my_count .my_count_top .mycount_cen ul li {
+  width: 50%;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  float: left;
+  text-align: center;
+  line-height: 0.3rem;
+  color: #fff;
+}
+.my_count .my_count_top .mycount_cen ul li:f .my_count .my_count_top .mycount_cen ul li.c1 {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.my_count .my_count_top .mycount_cen ul li li.c2 {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.my_count .my_count_top .mycount_cen ul li.active {
+  background: #fff;
+  color: #088fff;
+}
+.my_count .my_count_top .mycount_rt {
+  float: right;
+}
+.my_count .my_count_top .mycount_rt a {
+  display: block;
+  width: 0.27rem;
+  height: 0.27rem;
+  line-height: 0.27rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.125rem;
+  right: 0.12rem;
+  background: url(../images/webapp/count.png) no-repeat;
+  background-size: 100% 100%;
+}
+/*我的账户页面 END */

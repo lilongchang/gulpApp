@@ -1,0 +1,237 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<link rel="stylesheet" href="../css/mobileWeb/mui.css">
+<link rel="stylesheet" href="../css/mobileWeb/mui.picker.css">
+<link rel="stylesheet" href="../css/mobileWeb/reset.css">
+<link rel="stylesheet" href="../css/mobileWeb/h5_index.css">
+
+<title>认证富友</title>
+<script src="../js/mobile/mui.min.js"></script>
+<script src="../js/mobile/mui.picker.js"></script>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+<body style="background-color: #f2f2f2;">
+	<div class="wrap_fy">
+		<header id="header" class="mui-bar mui-bar-nav">	
+			<h1 class="mui-title">认证富友</h1>
+			<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav"></span>返回
+			</button>
+		</header>
+		<div class="fy_content">
+			
+			<form action="#" method="">
+				<ul class="fy_data_list">
+					<li>
+						<span>手机号码</span>
+						<span class="phone">15800726423</span>
+					</li>
+					<li>
+						<p>个人常用手机号码，作为富友账户登录账号，需可正常接收短信</p>
+					</li>
+					<li>
+						<span>真实姓名</span>
+						<span class="userName">中资联——指旺</span>
+					</li>
+					<li>
+						<span>证件类型</span>
+						<span class="userId">身份证</span>
+					</li>
+					<li>
+						<span>证件号码</span>
+						<span class="userIdNumber">123456789987654321</span>
+					</li>
+					<li>
+						<p>身份证内如果有X，请核实大小写</p>
+					</li>
+					<li class="mui-table-view-cell">
+		                <a class="mui-navigate-right">
+		                    <span>开户行地区代码</span>
+		                    <span class="location" id="location">上海市  上海市 </span>
+		                </a>	           
+					</li>
+					<li class="mui-table-view-cell">
+		                <a class="mui-navigate-right">
+		                    <span>开户行行别</span>
+		                    <span class="location_a1" onclick="alert(123)" id="bank">江阴市农村商业银行股份有限公司 </span>
+		                </a>	           
+					</li>
+					<li>
+						<span>银行卡号</span>
+						<input class="userBankIdNumber" type="text" value="" placeholder="请输入">
+					</li>
+					<li class="alt">
+						<p >您的个人常用的银行卡，用于和您的个人财富账户之间充值提现</p>
+					</li>
+					<li class="check">
+						<div class="userReg_check clearfix">
+			                <div class="userReg_check_ft">
+			                    <input type="text" name="userWord" placeholder="验证码">
+			                </div>
+			                <div class="userReg_check_rt">		                    
+		                        <div class="img">
+		                            <img src="../images/webapp/checkNumber.jpg">
+		                        </div>
+		                        <div class="changeImg">换一张</div>			             
+			                </div>
+			            </div>
+					</li>
+					<li class="btn">
+						<div class="inputNumber clearfix">
+			                <div class="inputNumber_check_ft">
+			                    <span></span>
+			                    <input type="text" name="userWord" placeholder="手机验证码">
+			                </div>
+			                <div class="inputNumber_check_rt">
+			                    <button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">点击获取验证</button>
+			                </div>
+			            </div>
+					</li>
+				</ul>
+			</form>
+			<div class="nextSep">
+		        <button type="button" class="mui-btn mui-btn-primary"><a href="#">下一步</a></button>   
+		    </div>
+			<div class="mui-poppicker"></div>
+			
+		</div>
+	</div>
+</body>
+<script>
+	window.onload = function(){
+			//省市地区联动
+			var pickerLocation = new mui.PopPicker({
+				layer: 2
+			});
+			//银行地区联动
+			var pickerBank = new mui.PopPicker({
+				layer: 1
+			});
+			//省市地区显示的数据
+			pickerLocation.setData([
+				{
+					value: '110000',
+					text: '北京市',
+					children: [
+					{
+						value: "110101",
+						text: "北京市"
+					}]
+				}, 
+				{
+					value: '120000',
+					text: '天津市',
+					children: [
+					{
+						value: "120101",
+						text: "和平区",
+						
+					},
+					{
+						value: "120102",
+						text: "河东区",
+					
+					}, 
+					{
+						value: "120104",
+						text: "南开区"
+					}]
+				},
+				{
+					value: '120000',
+					text: '上海市',
+					children: [
+					{
+						value: "120101",
+						text: "宝山区",
+						
+					},
+					{
+						value: "120102",
+						text: "徐汇区",
+					
+					}, 
+					{
+						value: "120104",
+						text: "嘉定区"
+					}]
+				}]);
+				
+				//银行地区数据
+				pickerBank.setData([
+					{
+						value: '110000',
+						text: '北京市银行'
+						
+					}, 
+					{
+						value: '120000',
+						text: '天津市银行'
+						
+					},
+					{
+						value: '120000',
+						text: '上海市银行'
+						
+					},
+					
+					{
+						value: '120000',
+						text: '河南银行'
+						
+					},
+					{
+						value: '120000',
+						text: '商丘市银行'
+						
+					}
+				]);
+			
+			pickerLocation.pickers[0].setSelectedIndex(0);
+			var locationBtn = document.getElementById('location');
+			var bankBtn = document.getElementById('bank');
+			locationBtn.addEventListener('tap',function() {
+				pickerLocation.show(function(item) {
+					console.log(item[0].text);
+					console.log(item[1].text);
+					locationBtn.innerHTML = item[0].text + ' ' + item[1].text;
+				});
+			});	
+
+			bankBtn.addEventListener('tap',function() {
+				pickerBank.show(function(item) {
+					bankBtn.innerHTML = item[0].text;
+				});
+			});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	}
+	
+	
+</script>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>
